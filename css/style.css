@@ -1,0 +1,224 @@
+:root {
+    --mainColor : #252734;
+    --secondaryColor : #333646;
+    --acsentColor : #00ffea;
+}
+
+body {
+    background-color: var(--mainColor);
+    min-height: 900px;
+    font-family: 'poppins', sans-serif;
+}
+
+section h1 {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Navbar */
+.nav-link.active {
+    color: var(--acsentColor) !important;
+    font-weight: 700;
+}
+
+.nav-dark {
+    background-color: var(--secondaryColor) !important;
+    z-index: 10;
+    transition: 0.8s;
+}
+/* End Navbar */
+
+/* Hero */
+.color-acsent {
+    color: var(--acsentColor);
+}
+
+#hero {
+    color: #fff;
+    min-height: 100vh;
+    padding-top: 75px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+}
+
+#hero h2 {
+    font-weight: 300;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+/* CTA (Call To Action) */
+.btn-custom1 {
+    background-color: var(--acsentColor);
+    text-align: center;
+    color: var(--mainColor) !important;
+    min-width: 150px;
+    height: 45px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-custom1:hover {
+    box-shadow: 0 0 5px #00ffea;
+    color: #fff !important;
+}
+
+.cv {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.sosial-icon svg {
+    margin-right: 0.7em;
+    margin-bottom: 10px;
+}
+
+.sosial-icon-footer svg {
+    margin-right: 0.7em;
+    margin-bottom: 10px;
+}
+/* End CTA */
+/* End Hero */
+
+/* About */
+hr {
+    width: 35%;
+    height: 5px;
+    color: var(--acsentColor);
+    margin: 0 auto;
+    opacity: 100%;
+}
+
+#about {
+    min-height: 300px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+/* End About */
+
+/* Skill */
+#skill {
+    min-height: 1700px;
+    width: 100%;
+    color: #fff;
+}
+
+#skill img {
+    width: 12%;
+    margin: 10px;
+}
+
+#skill .card {
+    background-color: #414558;
+    height: 550px;
+}
+
+#skill .card:hover {
+    background-color: var(--acsentColor);
+}
+
+.skill-konten {
+    margin-top: 120px;
+}
+
+.skill-konten h3 {
+    color: #fff;
+    padding-top: 1rem;
+}
+
+.skill-konten .card:hover h3, .skill-konten .card:hover p {
+    color: var(--secondaryColor) !important;
+}
+/* End Skill */
+
+/* Sertifikat */
+#sertifikat {
+    margin-top: -170px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--secondaryColor);
+}
+
+#sertifikat p, a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+#sertifikat img {
+    width: 49%;
+    padding: 10px;
+}
+/* End Sertifikat */
+
+/* Start Portofolio */
+#portofolio .container {
+    padding: 80px 10px;
+}
+
+#portofolio .card {
+    background-color: #414558;
+    color: #fff;
+    height: 650px;
+    overflow: hidden;
+    position: relative; /* Tambahkan ini */
+}
+
+#portofolio .card:hover {
+    background-color: var(--acsentColor);
+    color: var(--secondaryColor);
+}
+
+#portofolio .card .img-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Sesuaikan ini untuk proporsi gambar */
+    overflow: hidden;
+}
+
+#portofolio .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    position: absolute; /* Tambahkan ini */
+    top: 0;
+    left: 0;
+}
+
+#portofolio .card:hover img {
+    transform: scale(1.3);
+}
+
+#portofolio .card-body {
+    position: relative; /* Tambahkan ini */
+    z-index: 1; /* Tambahkan ini untuk memastikan teks di atas gambar */
+    padding: 20px; /* Sesuaikan padding untuk card-body */
+}
+
+#portofolio .card .btn {
+    background-color: var(--acsentColor);
+    color: var(--mainColor) !important;
+    font-weight: 700;
+}
+
+#portofolio .card:hover .btn {
+    background-color: #eaff00;
+    color: var(--mainColor) !important;
+}
+
+#portofolio .card .btn:hover {
+    box-shadow: 0 0 5px #eaff00;
+    color: #eaff00 !important;
+    background-color: #414558;
+}
+/* End Portofolio */
