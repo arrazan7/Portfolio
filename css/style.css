@@ -168,9 +168,7 @@ hr {
 #portofolio .card {
     background-color: #414558;
     color: #fff;
-    height: 650px;
-    overflow: hidden;
-    position: relative; /* Tambahkan ini */
+    height: 680px;
 }
 
 #portofolio .card:hover {
@@ -178,37 +176,13 @@ hr {
     color: var(--secondaryColor);
 }
 
-#portofolio .card .img-container {
-    position: relative;
-    width: 100%;
-    height: 100%; /* Sesuaikan ini untuk proporsi gambar */
-    overflow: hidden;
-}
-
-#portofolio .card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s;
-    position: absolute; /* Tambahkan ini */
-    top: 0;
-    left: 0;
-}
-
-#portofolio .card:hover img {
-    transform: scale(1.3);
-}
-
-#portofolio .card-body {
-    position: relative; /* Tambahkan ini */
-    z-index: 1; /* Tambahkan ini untuk memastikan teks di atas gambar */
-    padding: 20px; /* Sesuaikan padding untuk card-body */
-}
-
 #portofolio .card .btn {
     background-color: var(--acsentColor);
     color: var(--mainColor) !important;
     font-weight: 700;
+    position: absolute;
+    bottom: 30px; /* Sesuaikan dengan kebutuhan */
+    right: 30px;  /* Sesuaikan dengan kebutuhan */
 }
 
 #portofolio .card:hover .btn {
